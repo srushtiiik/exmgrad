@@ -25,6 +25,7 @@ pipeline{
         sh 'gradle run'
         }
        }
+  }
 post{
   success{
     echo "succuss"
