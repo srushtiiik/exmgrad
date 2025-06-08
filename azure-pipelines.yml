@@ -1,0 +1,18 @@
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo "my script1"
+  displayName: 'run with one line'
+- script: gradle build
+  displayName: 'build appli'
+- script: gradle run
+  displayName: 'running file'
